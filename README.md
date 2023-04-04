@@ -53,13 +53,15 @@ We are going to run a couple SQL queries and put the answers in the "Query Respo
 
 <!-- SQL: SELECT SUBSTR(phone1, 1,3) as area_code, count(phone1) as tally FROM usersContact GROUP BY area_code ORDER BY count(*) -->
 
-3.  - first_name: Alecia
-    - county: Los Angeles
-    - county total: 18
+3.  - first_name: Alaine
+    - county: Orange
+    - county total: 11
 
-<!-- SQL: SELECT MIN(users.first_name) AS min_first_name, usersAddress.county, COUNT(*) AS user_count FROM users JOIN usersAddress ON users.id = usersAddress.user_id GROUP BY usersAddress.county
+<!-- SELECT MIN(users.first_name) AS min_first_name, usersAddress.county,
+COUNT(*) AS user_count FROM users JOIN usersAddress ON users.id = usersAddress.user_id
+GROUP BY usersAddress.county
 HAVING COUNT(*) > 10
-ORDER BY user_count DESC  -->
+ORDER BY user_count DESC; -->
 
 ## Summary
 
